@@ -1,0 +1,126 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+  <title>Best product in the world</title>
+
+  <!-- metadata -->
+  <meta charset="utf-8" />
+  <meta name="description" content="A simple HTML5 page using some elements!" />
+  <meta name="author" content="Heil" />
+  <meta name="keywords" content="HTML5,iQuest,Remote,Homework,Learning,Elements" />
+
+  <!-- external css or other libraries -->
+  <link rel="stylesheet" href="./styles/design.css" /> <!-- With HTML5 we don't need to use type attribute ,but if we want we can add type="text/css" -->
+</head>
+<body>
+  <!-- header -->
+  <header id="head-section">
+
+    <img src="http://fakeimg.pl/50x50/"/>logo
+
+    <!-- Logo using figure element
+
+    <!--<figure>
+      <img src="http://fakeimg.pl/50x50/"/>logo
+      <!-- figcapton element for image caption
+      <figcaption>logo</figcaption>
+    </figure>
+
+    -->
+
+  <!-- navigation bar -->
+    <nav>
+      <ul>
+        <li><a href="#">Who we are</a></li>
+        <li><a href="#">What we do</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact us</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+  <!-- main content -->
+  <main>
+  <!-- section -->
+    <section id="main-section" class="section-wrapper">
+
+      <h1>PERFECT</h1>
+
+      <!-- first article wrapper -->
+      <article id="first-article" class="article-wrapper">
+        <h2>Just perfect</h2>
+        <!-- article image -->
+        <img src="http://fakeimg.pl/250x100/"/>
+      </article>
+
+      <!-- second article wrapper -->
+      <article id="second-article" class="article-wrapper">
+        <h3>Simplicity in the Product's vision</h3>
+        <p>Understanding the user's needs makes this product <strong>the best</strong> in the world at what <em>it does</em>.</p>
+      </article>
+
+      <!-- third article wrapper -->
+      <article id="third-article" class="article-wrapper">
+        <h3>Affordable,reliable and visionary</h3>
+        <p>The product was reliable ten years ago,is realibale today and it will be <strong>forever</strong>.</p>
+        <img src="http://fakeimg.pl/250x100/"/>
+      </article>
+
+    </section> <!-- #end-section -->
+
+    <!-- aside bars -->
+    <aside class="aside-wrapper">
+      <h3>Subscribe to our newsletter by providing a few info</h3>
+
+      <!-- if the user submit the form ,there are some private informations ,so we need to use the POST method -->
+      <form action="./homework.html" method="POST">
+        <input type="text" name="userName" placeholder="your full name" /> <!-- The name attribute is used to reference elements in a js, or to reference form data after a form is submitted. -->
+        <input type="email" name="useremail" placeholder="your email address" />
+        <button type="submit">Submit</button>
+      </form>
+      <h4>The following 3 lines, including this one, are aside from the page main content.</h4>
+    </aside>
+
+
+    <p><strong>footer section begins below the line</strong></p>
+
+    <hr class="separator" />
+  </main> <!-- #end-main# -->
+
+  <!-- We can use aside ,outside the main element ,but its good to be related on main element  -->
+  <!-- aside bars -->
+
+  <!-- footer element can be used within a main element, but this time will gonna use it outside main element and direct descendant of the body element -->
+  <footer class="footer-wrapper">
+
+
+    <p><strong>To become a master you need:</strong></p>
+
+    <ul>
+      <li><strong>User research</strong></li>
+      <li>Information architecture</li>
+      <li>Protyping</li>
+      <li>Interaction Design</li>
+      <li>Visual Design</li>
+      <li>Content Specialization</li>
+    </ul>
+
+    <p><strong>To become a guru you need also:</strong></p>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li><strong>JavaScript</strong></li>
+      <li>NodeJS</li>
+      <li>ReactJS</li>
+      <li>AngularJS</li>
+    </ul>
+
+    <hr class="separator" />
+
+  </footer>
+
+  <!-- External Scripts -->
+  <script src="scripts/script.js"></script>
+</body>
+</html>
